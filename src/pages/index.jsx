@@ -1,0 +1,5 @@
+export {default as AddNamePage} from './AddNamePage'
+export {default as Error404Page} from './Error404Page'
+export {default as HomePage} from './HomePage'
+export {default as NameDetailPage} from './NameDetailPage'
+export {default as NamesPage} from './NamesPage'
