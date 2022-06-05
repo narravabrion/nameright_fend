@@ -23,7 +23,7 @@ const Navbar = () => {
 							<Link className="text-white hover:text-gray-400 " to='/add-name'>Add</Link>
 						</li>
 						<li className='px-1 mx-1  '>
-							<a className="text-white hover:text-gray-400 " href=' '>
+							<a className="text-white hover:text-gray-400 " href='https://github.com/narravabrion/nameright_bend'>
 								<AiFillGithub />
 							</a>
 						</li>
