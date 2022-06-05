@@ -9,7 +9,9 @@ const NameDetailPage = () => {
 	const { id } = useParams()
 	const fetchName = useCallback(async () => {
 		try {
-			const res = await axios.get(` http://127.0.0.1:8080/api/v1/name/${id}`)
+			const res = await axios.get(
+				` https://namerightbend.herokuapp.com/api/v1/name/${id}`
+			)
 			setName(res.data)
 		} catch (error) {
 			toast.error(error.response.data.error)
@@ -24,7 +26,7 @@ const NameDetailPage = () => {
 		if (e.target.checked) {
 			try {
 				const res = await axios.put(
-					`http://127.0.0.1:8080/api/v1/name/upvote/${id}`,
+					`https://namerightbend.herokuapp.com/api/v1/name/upvote/${id}`,
 					{}
 				)
 				toast.success(res.data.message)
@@ -34,7 +36,7 @@ const NameDetailPage = () => {
 		} else {
 			try {
 				const res = await axios.put(
-					`http://127.0.0.1:8080/api/v1/name/downVote/${id}`,
+					`https://namerightbend.herokuapp.com/api/v1/name/downVote/${id}`,
 					{}
 				)
 				toast.success(res.data.message)

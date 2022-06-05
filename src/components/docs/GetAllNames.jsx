@@ -5,18 +5,17 @@ const GetAllNames = () => {
 	return (
 		<>
 			<div>
-			
 				<article>
 					<h1 className='text-xl font-semibold'>
 						{" "}
 						<span className='text-lg font-semibold'>1. </span>Get all names
 					</h1>
 					<CodeBlockComp
-						code={" http://127.0.0.1:8080/api/v1/name"}
+						code={" https://namerightbend.herokuapp.com/api/v1/name"}
 						language={"javascript"}
 						showLineNumbers={false}
 					/>
-					<p className="pl-3">
+					<p className='pl-3'>
 						Returns a list of all names in the database. The response will
 						resemble:
 					</p>
@@ -25,13 +24,13 @@ const GetAllNames = () => {
 						language={"javascript"}
 						showLineNumbers={false}
 					/>
-					<p className="pl-3">
+					<p className='pl-3'>
 						You can pass an optional limit query to specify the numer of results
 						you want back
 					</p>
 					<CodeBlockComp
 						code={
-							" http://127.0.0.1:8080/api/v1/name?limint=<arbitrary int value>"
+							" https://namerightbend.herokuapp.com/api/v1/name?limint=<arbitrary int value>"
 						}
 						language={"javascript"}
 						showLineNumbers={false}

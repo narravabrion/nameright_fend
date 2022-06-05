@@ -17,7 +17,7 @@ const AddNameForm = () => {
 	const onSubmit = async (data) => {
 		try {
             setLoading(true)
-			const res = await axios.post(" http://127.0.0.1:8080/api/v1/name/create", data)
+			const res = await axios.post(" https://namerightbend.herokuapp.com/api/v1/name/create", data)
 			toast.success(res.data.message)
 			navigate("/names", { replace: true })
             setLoading(false)

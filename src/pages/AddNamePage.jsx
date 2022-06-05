@@ -17,7 +17,7 @@ const AddNamePage = () => {
 							use the endpoint below to upload them
 						</p>
 						<CodeBlockComp
-							code={` http://127.0.0.1:8080/api/v1/name/create`}
+							code={` https://namerightbend.herokuapp.com/api/v1/name/create`}
 							language={"javascript"}
 							showLineNumbers={false}
 						/>

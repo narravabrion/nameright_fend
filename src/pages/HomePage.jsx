@@ -48,7 +48,7 @@ const HomePage = () => {
 				<GetNameByStr />
 			</section>
 
-			<p className='py-1 '>
+			<p className='py-1 px-1 '>
 				Looking forward to developing more endpoints as the number of names
 				increase! cheers🥂
 			</p>

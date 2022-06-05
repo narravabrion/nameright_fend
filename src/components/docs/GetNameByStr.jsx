@@ -11,7 +11,7 @@ const GetNameByStr = () => {
 						<span className='text-lg font-semibold'>3. </span>Get a name by string value
 					</h1>
 					<CodeBlockComp
-						code={" http://127.0.0.1:8080/api/v1/name/value/<str-name-value>"}
+						code={" https://namerightbend.herokuapp.com/api/v1/name/value/<str-name-value>"}
 						language={"javascript"}
 						showLineNumbers={false}
 					/>
